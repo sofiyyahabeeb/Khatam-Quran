@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <nav id=navbar>
+        <div class="nav-wrapper teal">
+            <a href="#" class="brand-logo"> Khatam App</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#firstsection">Home</a></li>
+                <li><a href="#secondsection">By page</a></li>
+                <li><a href="#thirdsection">By day</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="firstsection center-align teal lighten-5 " id="firstsection">
+        <h1> Khatam Calculator</h1>
+        <h5>This is a simple web app that helps you gauge how long it will take for you to khatam the Quran in a
+            sepcific amount of time</h5>
+
+        <a class="waves-effect waves-light btn-large" href="#secondsection"><i class="material-icons left">cloud</i>By
+            Page</a>
+        <a class="waves-effect waves-light btn-large" href="#thirdsection"><i class="material-icons left">cloud</i>By
+            Day</a>
+    </div>
+    <div class="secondsection container center-align" id="secondsection">
+        <h1>By Pages</h1>
+        <h5>Find out how many days it will take to khatam by specifying how many pages you plan to read daily.</h5>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="textarea1" type="number" class="validate">
+                        <label for="textarea1">Number of Pages</label>
+                    </div>
+                    <h7>Enter the number of pages you plan to read per day</h7>
+                </div>
+                <button onclick= "daysNeeded()" id= "calculate button" class="btn waves-effect waves-light" type="submit">Calculate
+                    <i class="material-icons right">send</i>
+                </button>
+                <div class="row">
+                    <div class="col s2 m12">
+                        <div class="card green lighten-5 ">
+                            <div class="card-content black-text">
+                                <span id= "cardAnswers" class="card-title">Your results will be displayed here after you click the
+                                    'calculate' button</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    <div class="thirdsection container center-align" id="thirdsection">
+        <h1>By Days</h1>
+        <h5>Find out how many pages you need to read daily by specifying how many days you hope to khatam by. </h5>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="textarea2" class="materialize-textarea"></textarea>
+                        <label for="textarea2">Number of Days</label>
+                    </div>
+                    <h7>Enter the number of days you hope to khatam by</h7>
+                </div>
+                <button onclick="pagesNeedToRead()" class="btn waves-effect waves-light" type="submit">Calculate
+                    <i class="material-icons right">send</i>
+                </button>
+                <div class="row">
+                    <div class="col s2 m12">
+                        <div class="card green lighten-5 ">
+                            <div class="card-content black-text">
+                                <span id="cardAnswers2" class="card-title">Your results will be displayed here after you click the
+                                    'calculate' button</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <footer class="page-footer teal">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">About Web App</h5>
+                    <p class="grey-text text-lighten-4">This is a coding project that was done during a Code Hero session to gauge how long it will take for one to khatam the Quran.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">My Other Apps</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href=" https://sofiyyahabeeb.github.io/CA-JS1-door-/"target="_blank" >Toggle Door</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://sofiyyahabeeb.github.io/Calculator/"target="_blank" >Calculator</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://sofiyyahabeeb.github.io/CA-JS3-grade-calculator-/"target="_blank" >Grade Calculator</a></li>
+                        <li><a class="grey-text text-lighten-3" href=" https://sofiyyahabeeb.github.io/MP-JS4-quote-/"target="_blank" >Random Quote Generator</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2019 Code Hero Projects by Katsura Kotaro
+               
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

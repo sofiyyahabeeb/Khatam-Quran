@@ -1,0 +1,18 @@
+.firstsection {
+   
+    height:100vh;
+    padding-top: 15%;
+}
+.secondsection {
+    height:100vh;
+    padding-top: 10%;
+}
+.thirdsection{
+    height:100vh;
+    padding-top: 10%;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
